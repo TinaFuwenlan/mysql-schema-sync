@@ -273,10 +273,6 @@ func CheckSchemaDiff(cfg *Config) {
 			continue
 		}
 
-		if cfg.CheckMatchIgnoreTables(table) == true {
-			log.Println("Table:", table, "skip")
-			continue
-		}
 
 		sd := sc.getAlterDataByTable(table)
 
